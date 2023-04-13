@@ -1,12 +1,15 @@
 <template>
-    <header class="py-4 d-flex align-items-center justify-content-between">
-        <img src="../assets/images/dc-logo.png" alt="logo dc">
-        <ul class="d-flex align-items-center gap-4">
-            <li v-for="(link, index) in links" :key="index">
-                <div>{{ link.text.toUpperCase() }}</div>
-            </li>
-        </ul>
-    </header>
+    <div class="container">
+        <header class="py-4 d-flex align-items-center justify-content-between">
+            <img src="../../public/images/dc-logo.png" alt="logo dc">
+            <ul class="d-flex align-items-center gap-4">
+                <li v-for="(link, index) in links" :key="index">
+                    <div>{{ link.text.toUpperCase() }}</div>
+                </li>
+            </ul>
+        </header>
+    </div>
+    
 </template>
 
 <script>
@@ -24,6 +27,8 @@
 <style lang="scss" scoped>
     header{
         height: 7rem;
+        background-color: white;
+        color: black;
 
         img{
             height: 100%;
@@ -41,7 +46,7 @@
                
 
             div{ 
-                padding: 40px 0;
+                padding: 41.5px 0;
                 &:hover{                   
                     border-bottom: 5px solid rgba(var(--bs-primary-rgb));
                 } 
