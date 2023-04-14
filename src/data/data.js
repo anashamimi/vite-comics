@@ -76,7 +76,7 @@ const comics = [
         img: 'buy-dc-power-visa.svg',
         text: 'dc power visa'
     }
-]
+];
 
-export { links };
-export { comics };
+
+export { links , comics };
