@@ -25,6 +25,7 @@
 </script>
 
 <style lang="scss" scoped>
+
     ul{
         list-style: none;
         margin: 0;

@@ -62,7 +62,7 @@
 
         <div class="footer-social py-4">
             <div class="container d-flex justify-content-between align-items-center">
-                <button type="button" class="btn btn-outline-primary text-uppercase text-white fw-semibold">sign-up now!</button>
+                <button type="button" class="btn btn-outline-primary rounded-0 text-uppercase text-white fw-semibold">sign-up now!</button>
 
                 <div class="d-flex gap-3">
                     <p class="text-uppercase fs-5 text-primary fw-bold">follow us</p>
@@ -95,6 +95,7 @@ import BuyComicsComponent from './BuyComicsComponent.vue';
 footer{
     background-image: url('../../public/images/footer-bg.jpg');
     background-size: cover;
+    position: relative;
 }
 
 ul{
@@ -110,11 +111,17 @@ ul{
 }
 
 .ah-logo-bg{
-    height: 100%;
+    height: 75%;
+    position: absolute;
+    margin-left: -40rem;
+    margin-top: -2rem;
+    z-index: 0;
 }
 
 .footer-social{
     background-color: #303030;
+    z-index: 100;
+    position: relative;
 
     img{
         cursor: pointer;
