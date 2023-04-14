@@ -1,9 +1,9 @@
 <template>
     <footer>
         <BuyComicsComponent/>
-        <div class="container py-5">
+        <div class="container ">
             <div class="d-flex justify-content-between">
-                <div class="d-flex gap-5">
+                <div class="d-flex gap-5 py-5">
                     <div>
                         <ul>
                             <li><h5 class="text-uppercase py-3">dc comics</h5></li>
@@ -55,22 +55,38 @@
                 </div>
 
                 <div>
-                    <img src="../../public/images/dc-logo-bg.png" alt="logo bg">
-                </div>
-                
+                    <img class="ah-logo-bg" src="../../public/images/dc-logo-bg.png" alt="logo bg">
+                </div>                
             </div>
         </div>
 
-        <div></div>
+        <div class="footer-social py-4">
+            <div class="container d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-outline-primary text-uppercase text-white fw-semibold">sign-up now!</button>
+
+                <div class="d-flex gap-3">
+                    <p class="text-uppercase fs-5 text-primary fw-bold">follow us</p>
+                    <div v-for="(social, index) in socials" :key="index">
+                        <img :src="'../../public/images/'+social.image" :alt="social.text">
+                    </div>
+                </div>
+            </div>            
+        </div>
     </footer>
 </template>
 
 <script>
+import { socials } from '../data/data';
 import BuyComicsComponent from './BuyComicsComponent.vue';
     export default {
         name: 'FooterComponent',
         components: {
             BuyComicsComponent,
+        },
+        data() {
+            return {
+                socials: socials,
+            }
         }
     }
 </script>
@@ -90,6 +106,18 @@ ul{
     p{
         font-size: 0.8rem;
         color: #959595;
+    }
+}
+
+.ah-logo-bg{
+    height: 100%;
+}
+
+.footer-social{
+    background-color: #303030;
+
+    img{
+        cursor: pointer;
     }
 }
 </style>

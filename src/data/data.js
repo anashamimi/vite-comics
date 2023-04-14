@@ -78,5 +78,32 @@ const comics = [
     }
 ];
 
+const socials = [
+    {
+        image: 'footer-facebook.png',
+        text: 'facebook',
 
-export { links , comics };
+    },
+    {
+        image: 'footer-twitter.png',
+        text: 'twitter',
+
+    },
+    {
+        image: 'footer-youtube.png',
+        text: 'youtube',
+
+    },
+    {
+        image: 'footer-pinterest.png',
+        text: 'pinterest',
+
+    },
+    {
+        image: 'footer-periscope.png',
+        text: 'periscope',
+
+    },
+]
+
+export { links , comics , socials };
