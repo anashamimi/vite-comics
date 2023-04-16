@@ -64,7 +64,7 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <button type="button" class="btn btn-outline-primary rounded-0 text-uppercase text-white fw-semibold">sign-up now!</button>
 
-                <div class="d-flex gap-3">
+                <div class="d-flex gap-3 align-items-center">
                     <p class="text-uppercase fs-5 text-primary fw-bold">follow us</p>
                     <div v-for="(social, index) in socials" :key="index">
                         <img :src="'../../public/images/'+social.image" :alt="social.text">
@@ -98,6 +98,10 @@ footer{
     position: relative;
 }
 
+p{
+    margin: 0;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -106,6 +110,7 @@ ul{
 
     p{
         font-size: 0.8rem;
+        padding: 10px 0;
         color: #959595;
     }
 }
